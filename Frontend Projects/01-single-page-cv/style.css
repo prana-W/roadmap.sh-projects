@@ -1,3 +1,8 @@
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 header div {
     text-align: center;
 }
@@ -6,16 +11,28 @@ header img {
     float: left;
 }
 
-main section {
-    text-align: center;
-  
-  
 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
-/* main section div {
-    text-align: left;
-} */
+table, th, td {
+    border: 1px solid black;
+    
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
 
 pre {
     font-family: serif;
