@@ -4,7 +4,7 @@
 <a href= "https://roadmap.sh/projects/single-page-cv">Single Page CV</a>
 <br>
 <p>Click any of the below page to view the source code of the website</p>
-<a href = "https://github.com/Pranaw-NIT-JSR/roadmap.sh-projects/tree/main/Frontend%20Projects/01-single-page-cv"> <img src=""> </a>
+<a href = "https://prana-w.github.io/roadmap.sh-projects/Frontend%20Projects/01-single-page-cv/Pranaw-Kumar.html">Single-Page CV</a>
 
 
 
