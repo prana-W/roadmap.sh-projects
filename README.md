@@ -1,5 +1,9 @@
-This repository contains the projects idea from roadmap.sh
-<a href= "https://roadmap.sh/projects/single-page-cv">
-Single Page CV
-Start: 30/12/2024
-Link: <a href= "https://roadmap.sh/projects/single-page-cv">here</a>
+<h1>Projects</h1>
+<hr>
+<p>This repository contains the projects idea from roadmap.sh</p>
+<h2>Projects List</h2>
+<hr>
+<a href= "https://roadmap.sh/projects/single-page-cv">Single Page CV</a>
+
+
+
