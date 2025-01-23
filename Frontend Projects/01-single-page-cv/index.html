@@ -11,6 +11,44 @@
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6N9F8TN403"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6N9F8TN403');
+</script>
+
+<script defer>
+    async function loadAchievements() {
+        try {
+            const response = await fetch('achievements.txt'); // Change to 'achievements.json' if using JSON
+            const data = await response.text();
+
+            const achievementsList = document.getElementById('achievements-list');
+
+            // For plain text
+            const achievements = data.split('\n').filter(line => line.trim() !== '');
+            
+            // For JSON, parse it (uncomment below line if using JSON file)
+            // const achievements = await response.json();
+
+            achievements.forEach(achievement => {
+                const li = document.createElement('li');
+                li.textContent = achievement;
+                achievementsList.appendChild(li);
+            });
+        } catch (error) {
+            console.error('Error loading achievements:', error);
+        }
+    }
+
+    // Call the function when the page loads
+    window.onload = loadAchievements;
+</script>
+
 <body>
     <header>
         <div>
@@ -84,17 +122,14 @@
                 </tbody>
             </table>
         </section>
-        <section>
-            <h3> ACHIEVEMENTS:</h3>
-            <ul>
-                <li>Secured position in top 1.5% of KVS Students in the All India Secondary School Examination (AISSE),
-                    2022
-                    conducted by Central Board of Secondary Education (CBSE). </li>
-                <li>Got shortlisted in Internal Hackathon (SIH).</li>
-                <li>Over 30k+ content views on Quora.</li>
-                <li>5 stars (Gold) in Problem solving on HackerRank.</li>
+        
+         <section id="achievements">
+            <h2>Achievements</h2>
+            <ul id="achievements-list">
+                <!-- Achievements will be loaded here -->
             </ul>
         </section>
+
         <section>
             <h3>POSITIONS OF RESPONSIBILITIES:</h3>
             <ul>
