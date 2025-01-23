@@ -24,16 +24,13 @@
 <script defer>
     async function loadAchievements() {
         try {
-            const response = await fetch('achievements.txt'); // Change to 'achievements.json' if using JSON
+            const response = await fetch('achievements.txt'); 
             const data = await response.text();
 
             const achievementsList = document.getElementById('achievements-list');
 
-            // For plain text
             const achievements = data.split('\n').filter(line => line.trim() !== '');
-            
-            // For JSON, parse it (uncomment below line if using JSON file)
-            // const achievements = await response.json();
+        
 
             achievements.forEach(achievement => {
                 const li = document.createElement('li');
