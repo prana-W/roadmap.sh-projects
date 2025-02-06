@@ -1,0 +1,66 @@
+/* Dark theme with neon aesthetics */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d; /* Dark background */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Scrollable page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #00ffcc; /* Neon cyan */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+  
+  /* Links as neon buttons */
+  a {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff00ff; /* Neon pink */
+    background: rgba(255, 0, 255, 0.2);
+    padding: 15px 30px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    border: 2px solid #ff00ff;
+    width: 300px;
+  }
+  
+  /* Hover effect for neon glow */
+  a:hover {
+    background: #ff00ff;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px #ff00ff, 0 0 25px #ff00ff;
+    transform: scale(1.05);
+  }
+  
+  /* Active click effect */
+  a:active {
+    transform: scale(0.95);
+  }
+  
+  /* Make the page scrollable */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150vh; /* Ensures scrolling */
+  }
+  
